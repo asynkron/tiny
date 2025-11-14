@@ -1,11 +1,10 @@
-# tiny
-The shortest structured data format for LLM usage
+# tiny - ~41% smaller than TOON
 
-> Roughly 41% fewer tokens than the TOON version.
+The shortest structured data format for LLM usage
 
 This is a response to the TOON format:
 
-From the TOON examples:
+## From the TOON examples
 
 ```json
 {

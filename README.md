@@ -27,13 +27,15 @@ users[2]{id,name,role}:
 
 ## "tiny"
 
+Start with good old LISP S-Expressions:
+
 ```lisp
 (users (id name role)
   (1 Alice admin)
   (2 Bob user))
 ```
 
-Without the newlines:
+Remove any newlines:
 
 ```lisp
 (users (id name role) (1 Alice admin) (2 Bob user))

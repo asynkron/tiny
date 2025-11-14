@@ -1,4 +1,4 @@
-# tiny - ~41% smaller than TOON
+# tiny ~41% smaller than TOON
 
 The shortest structured data format for LLM usage
 

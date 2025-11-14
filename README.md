@@ -29,7 +29,7 @@ users[2]{id,name,role}:
 
 Start with good old LISP S-Expressions:
 
-```lisp
+```scheme
 (users (id name role)
   (1 Alice admin)
   (2 Bob user))
@@ -37,19 +37,19 @@ Start with good old LISP S-Expressions:
 
 Remove any newlines:
 
-```lisp
+```scheme
 (users (id name role) (1 Alice admin) (2 Bob user))
 ```
 
 Now replace `)(` with `|`
 
-```lisp
+```scheme
 (users(id name role|1 Alice admin|2 Bob user))
 ```
 
 Drop the leading `(` and any number of trailing `)`
 
-```lisp
+```scheme
 users(id name role|1 Alice admin|2 Bob user
 ```
 
@@ -136,7 +136,7 @@ metrics[5]{date,views,clicks,conversions,revenue,bounceRate}:
 
 ### tiny
 
-```
+```scheme
 metrics(date views clicks conversions revenue bounceRate|2025-01-01 5715 211 28 7976.46 0.47|2025-01-02 7103 393 28 8360.53 0.32|2025-01-03 7248 378 24 3212.57 0.5|2025-01-04 2927 77 11 1211.69 0.62|2025-01-05 3530 82 8 462.77 0.56
 ```
 

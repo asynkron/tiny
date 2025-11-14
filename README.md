@@ -22,7 +22,7 @@ users[2]{id,name,role}:
   2,Bob,user
 ```
 
-** Count: 22 tokens **
+**Count: 22 tokens**
 
 ## "tiny"
 
@@ -50,7 +50,7 @@ Drop the leading `(` and any number of trailing `)`
 users(id name role|1 Alice admin|2 Bob user
 ```
 
-** Count: 13 tokens **
+**Count: 13 tokens**
 
 
 Which then can be decoded back into JSON:

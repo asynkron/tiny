@@ -1,7 +1,7 @@
 # tiny
 The shortest structured data format for LLM usage
 
-> Roughly 40% fewer tokens than the TOON version.
+> Roughly 41% fewer tokens than the TOON version.
 
 This is a response to the TOON format:
 
@@ -120,6 +120,19 @@ Which then can be decoded back into JSON:
 }
 ```
 
+### TOON
+
+```
+metrics[5]{date,views,clicks,conversions,revenue,bounceRate}:
+  2025-01-01,5715,211,28,7976.46,0.47
+  2025-01-02,7103,393,28,8360.53,0.32
+  2025-01-03,7248,378,24,3212.57,0.5
+  2025-01-04,2927,77,11,1211.69,0.62
+  2025-01-05,3530,82,8,462.77,0.56
+```
+
+**73 tokens**
+
 ### tiny
 
 ```
@@ -127,3 +140,7 @@ metrics(date views clicks conversions revenue bounceRate|2025-01-01 5715 211 28 
 ```
 
 **Count: 43 tokens**
+
+Again, ~41% smaller than TOON.
+
+

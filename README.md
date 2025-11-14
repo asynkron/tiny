@@ -1,6 +1,8 @@
 # tiny
 The shortest structured data format for LLM usage
 
+> Roughly 40% fewer tokens than the TOON version.
+
 This is a response to the TOON format:
 
 From the TOON examples:
